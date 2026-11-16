@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D визуализации комнат 56.76 м2</title>
+  <style>
+    :root {
+      --ink: #2f2d2a;
+      --muted: #6f6b64;
+      --paper: #f4efe7;
+      --wall: #f7f3eb;
+      --sidewall: #ece4d9;
+      --floor: #d9bd92;
+      --floor-line: rgba(95, 72, 45, .28);
+      --wood: #b98d5c;
+      --wood-dark: #8a633e;
+      --sage: #8fa08b;
+      --graphite: #34383a;
+      --beige: #d7c5ad;
+      --cream: #fffaf2;
+      --glass: #a9c9dc;
+      --tile: #ded8cf;
+      --shadow: rgba(45, 35, 25, .18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #ded8cf;
+      color: var(--ink);
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #f8f5ef;
+      border: 1px solid #ccc2b6;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 16px 34px rgba(54, 46, 37, .14);
+    }
+
+    .caption {
+      padding: 12px 14px 14px;
+      border-top: 1px solid #ddd4c9;
+      background: #fbf8f1;
+    }
+
+    .caption h2 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .caption p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: linear-gradient(#fdfbf7, #eee6dc);
+    }
+
+    .outline { stroke: rgba(35,32,28,.64); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+    .fine { fill: none; stroke: rgba(35,32,28,.42); stroke-width: 1.2; stroke-linejoin: round; stroke-linecap: round; }
+    .wall-main { fill: var(--wall); }
+    .wall-side { fill: var(--sidewall); }
+    .floor { fill: var(--floor); }
+    .ceiling { fill: #fffdf9; }
+    .shadow { fill: var(--shadow); filter: blur(2px); }
+    .glass { fill: var(--glass); opacity: .72; }
+    .cream { fill: var(--cream); }
+    .beige { fill: var(--beige); }
+    .sage { fill: var(--sage); }
+    .graphite { fill: var(--graphite); }
+    .wood { fill: var(--wood); }
+    .wood-dark { fill: var(--wood-dark); }
+    .tile { fill: var(--tile); }
+    .white { fill: #fbfaf6; }
+    .metal { fill: #c8c8c2; }
+    .plant { fill: #6f8c67; }
+    .line { fill: none; stroke: var(--floor-line); stroke-width: 1.2; }
+
+    @media (max-width: 920px) {
+      main { padding: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>3D визуализации по планировке 2К, 56.76 м2</h1>
+  <p class="lead">Концепт в едином стиле: теплый современный ремонт, светлые стены, дерево, спокойные акценты и практичная мебель по форме помещений.</p>
+
+  <section class="grid">
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация гостиной">
+        <polygon class="ceiling" points="120,80 370,220 660,220 880,90 830,45 150,45"/>
+        <polygon class="wall-main" points="370,220 660,220 660,420 370,420"/>
+        <polygon class="wall-side" points="120,80 370,220 370,420 120,610"/>
+        <polygon class="wall-side" points="660,220 880,90 880,610 660,420"/>
+        <polygon class="floor" points="120,610 370,420 660,420 880,610"/>
+        <path class="line" d="M240 610 L415 420 M360 610 L465 420 M480 610 L510 420 M600 610 L555 420 M720 610 L608 420"/>
+        <path class="line" d="M170 570 C320 535 510 535 825 570 M215 535 C370 505 535 505 790 535"/>
+        <rect class="glass outline" x="430" y="245" width="170" height="150" rx="4"/>
+        <rect class="white outline" x="447" y="260" width="58" height="118"/>
+        <rect class="white outline" x="522" y="260" width="58" height="118"/>
+        <rect class="metal" x="430" y="396" width="170" height="20"/>
+        <polygon class="shadow" points="110,470 390,420 520,482 245,560"/>
+        <polygon class="beige outline" points="112,430 320,385 480,432 265,505"/>
+        <polygon class="beige outline" points="112,430 112,515 265,585 265,505"/>
+        <polygon class="beige outline" points="265,505 480,432 480,512 265,585"/>
+        <polygon class="sage outline" points="205,392 320,370 430,405 310,432"/>
+        <polygon class="wood outline" points="675,405 855,365 855,425 675,490"/>
+        <polygon class="wood-dark" points="675,490 855,425 855,458 675,522"/>
+        <polygon class="graphite outline" points="705,250 825,210 825,305 705,340"/>
+        <polygon class="wood outline" points="725,350 825,320 825,520 725,548"/>
+        <path class="fine" d="M745 374 L810 354 M745 410 L810 390 M745 446 L810 426"/>
+      </svg>
+      <div class="caption">
+        <h2>Гостиная 19.48 м2</h2>
+        <p>Диван у длинной стены, ТВ-зона напротив, стеллаж у окна и свободный проход к остеклению.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация спальни">
+        <polygon class="ceiling" points="100,80 350,220 650,220 880,85 830,45 150,45"/>
+        <polygon class="wall-main" points="350,220 650,220 650,425 350,425"/>
+        <polygon class="wall-side" points="100,80 350,220 350,425 100,610"/>
+        <polygon class="wall-side" points="650,220 880,85 880,610 650,425"/>
+        <polygon class="floor" points="100,610 350,425 650,425 880,610"/>
+        <path class="line" d="M220 610 L405 425 M340 610 L455 425 M460 610 L500 425 M580 610 L545 425 M700 610 L600 425"/>
+        <rect class="glass outline" x="425" y="250" width="150" height="150" rx="4"/>
+        <rect class="white outline" x="442" y="266" width="46" height="116"/>
+        <rect class="white outline" x="506" y="266" width="50" height="116"/>
+        <rect class="metal" x="420" y="402" width="160" height="24"/>
+        <polygon class="shadow" points="305,430 645,410 830,510 480,615"/>
+        <polygon class="beige outline" points="350,390 640,405 815,500 480,585"/>
+        <polygon class="beige outline" points="350,390 480,455 815,500 640,405"/>
+        <polygon class="cream outline" points="425,420 610,430 725,490 530,540"/>
+        <polygon class="white outline" points="640,397 745,430 710,470 600,435"/>
+        <polygon class="white outline" points="495,394 600,405 560,445 458,425"/>
+        <polygon class="wood outline" points="120,105 250,160 250,560 120,610"/>
+        <path class="fine" d="M150 155 L218 182 L218 545 M150 300 L218 328 M150 455 L218 485"/>
+        <polygon class="wood outline" points="730,405 835,440 835,550 730,515"/>
+        <polygon class="cream outline" points="705,375 750,388 750,425 705,412"/>
+        <path class="fine" d="M720 358 C745 343 770 356 780 382"/>
+      </svg>
+      <div class="caption">
+        <h2>Спальня 18.23 м2</h2>
+        <p>Кровать с проходами, шкаф вдоль стены, тумбы и мягкая светлая отделка с деревянным полом.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация кухни">
+        <polygon class="ceiling" points="110,85 355,215 660,215 870,85 820,45 160,45"/>
+        <polygon class="wall-main" points="355,215 660,215 660,420 355,420"/>
+        <polygon class="wall-side" points="110,85 355,215 355,420 110,610"/>
+        <polygon class="wall-side" points="660,215 870,85 870,610 660,420"/>
+        <polygon class="tile" points="110,610 355,420 660,420 870,610"/>
+        <path class="line" d="M180 610 L390 420 M300 610 L445 420 M420 610 L500 420 M540 610 L555 420 M660 610 L610 420"/>
+        <path class="line" d="M130 560 H850 M190 515 H800 M250 475 H755"/>
+        <rect class="glass outline" x="160" y="135" width="78" height="420"/>
+        <polygon class="cream outline" points="535,240 690,215 840,135 840,260 690,310 535,325"/>
+        <path class="fine" d="M585 232 L585 315 M635 225 L635 312 M690 215 L690 310 M748 184 L748 290"/>
+        <polygon class="cream outline" points="520,355 690,325 845,265 845,410 690,470 520,465"/>
+        <path class="fine" d="M570 347 V456 M625 337 V465 M690 325 V470 M760 300 V438"/>
+        <ellipse class="graphite outline" cx="775" cy="295" rx="35" ry="12" transform="rotate(-17 775 295)"/>
+        <ellipse class="graphite outline" cx="820" cy="278" rx="30" ry="10" transform="rotate(-17 820 278)"/>
+        <polygon class="metal outline" points="605,360 675,350 675,385 605,397"/>
+        <polygon class="wood outline" points="250,405 435,375 560,440 360,500"/>
+        <polygon class="wood-dark" points="360,500 560,440 560,470 360,535"/>
+        <path class="fine" d="M290 500 V585 M520 438 V555 M360 500 V600 M435 375 V510"/>
+        <polygon class="sage outline" points="220,430 255,405 285,475 250,505"/>
+        <polygon class="sage outline" points="515,430 560,440 535,515 495,495"/>
+      </svg>
+      <div class="caption">
+        <h2>Кухня 9.02 м2</h2>
+        <p>Гарнитур вдоль правой стороны, стол на 4 места ближе к центру, выход на лоджию остается свободным.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация ванной">
+        <polygon class="ceiling" points="130,95 360,220 645,220 835,95 785,55 175,55"/>
+        <polygon class="wall-main" points="360,220 645,220 645,425 360,425"/>
+        <polygon class="wall-side" points="130,95 360,220 360,425 130,605"/>
+        <polygon class="wall-side" points="645,220 835,95 835,605 645,425"/>
+        <polygon class="tile" points="130,605 360,425 645,425 835,605"/>
+        <path class="line" d="M190 605 L390 425 M300 605 L445 425 M410 605 L500 425 M520 605 L550 425 M630 605 L600 425 M740 605 L650 425"/>
+        <path class="line" d="M150 560 H815 M205 520 H780 M260 480 H745"/>
+        <polygon class="white outline" points="610,310 805,250 805,500 610,570"/>
+        <polygon class="glass outline" points="635,330 780,285 780,465 635,520"/>
+        <polygon class="white outline" points="230,360 445,350 445,430 230,455"/>
+        <ellipse class="metal outline" cx="345" cy="383" rx="48" ry="18"/>
+        <polygon class="cream outline" points="265,455 420,435 395,560 290,590"/>
+        <polygon class="white outline" points="455,410 555,400 590,455 545,520 450,500"/>
+        <ellipse class="white outline" cx="510" cy="440" rx="46" ry="28"/>
+        <rect class="glass outline" x="395" y="145" width="140" height="100"/>
+        <path class="fine" d="M415 165 H515 V225 H415 Z M420 175 L510 220 M510 175 L420 220"/>
+        <path class="fine" d="M362 220 V425 M420 220 V425 M480 220 V425 M540 220 V425 M600 220 V425"/>
+      </svg>
+      <div class="caption">
+        <h2>Ванная 4.11 м2</h2>
+        <p>Ванна справа, раковина со столешницей, унитаз и светлая крупноформатная плитка.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация прихожей и коридора">
+        <polygon class="ceiling" points="110,80 350,220 650,220 870,80 820,45 160,45"/>
+        <polygon class="wall-main" points="350,220 650,220 650,430 350,430"/>
+        <polygon class="wall-side" points="110,80 350,220 350,430 110,610"/>
+        <polygon class="wall-side" points="650,220 870,80 870,610 650,430"/>
+        <polygon class="floor" points="110,610 350,430 650,430 870,610"/>
+        <path class="line" d="M220 610 L405 430 M340 610 L455 430 M460 610 L500 430 M580 610 L550 430 M700 610 L610 430"/>
+        <rect class="white outline" x="430" y="255" width="120" height="175"/>
+        <rect class="cream outline" x="450" y="278" width="80" height="130"/>
+        <circle class="graphite" cx="518" cy="350" r="5"/>
+        <polygon class="wood outline" points="120,110 260,170 260,560 120,610"/>
+        <path class="fine" d="M150 158 L230 190 L230 545 M190 176 V580 M150 310 L230 350 M150 460 L230 505"/>
+        <polygon class="glass outline" points="650,235 785,185 785,405 650,450"/>
+        <path class="fine" d="M675 255 L760 222 L760 380 L675 413 M675 255 L760 380 M760 222 L675 413"/>
+        <polygon class="wood outline" points="530,440 735,385 735,445 530,520"/>
+        <path class="fine" d="M575 428 V502 M640 410 V480 M700 395 V458"/>
+        <polygon class="sage outline" points="300,440 430,405 500,445 365,495"/>
+        <path class="fine" d="M330 495 V550 M470 442 V510 M365 495 V565"/>
+      </svg>
+      <div class="caption">
+        <h2>Прихожая + коридор 7.40 м2</h2>
+        <p>Шкаф у входа, зеркало, банкетка и узкая консоль без перегруза проходов.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <svg viewBox="0 0 980 660" role="img" aria-label="3D визуализация лоджии">
+        <polygon class="ceiling" points="115,115 345,235 665,235 855,115 800,80 170,80"/>
+        <polygon class="wall-main" points="345,235 665,235 665,420 345,420"/>
+        <polygon class="wall-side" points="115,115 345,235 345,420 115,580"/>
+        <polygon class="wall-side" points="665,235 855,115 855,580 665,420"/>
+        <polygon class="floor" points="115,580 345,420 665,420 855,580"/>
+        <path class="line" d="M210 580 L390 420 M330 580 L445 420 M450 580 L500 420 M570 580 L555 420 M690 580 L610 420"/>
+        <rect class="glass outline" x="390" y="160" width="230" height="210"/>
+        <rect class="white outline" x="410" y="180" width="72" height="170"/>
+        <rect class="white outline" x="500" y="180" width="98" height="170"/>
+        <polygon class="wood outline" points="130,205 240,255 240,535 130,585"/>
+        <path class="fine" d="M155 245 L215 270 L215 520 M155 335 L215 365 M155 455 L215 495"/>
+        <polygon class="wood outline" points="720,270 820,230 820,535 720,575"/>
+        <path class="fine" d="M742 300 L800 278 M742 385 L800 360 M742 470 L800 442"/>
+        <polygon class="wood outline" points="390,430 520,405 615,440 485,490"/>
+        <path class="fine" d="M425 490 V555 M585 438 V515 M485 490 V570"/>
+        <path class="plant outline" d="M290 425 C335 360 390 382 400 450 C350 480 315 470 290 425 Z"/>
+        <path class="plant outline" d="M625 430 C655 365 725 370 735 448 C690 480 655 475 625 430 Z"/>
+      </svg>
+      <div class="caption">
+        <h2>Лоджия 3.04 / 1.52 м2</h2>
+        <p>Узкое хранение по торцам, складной столик и зеленая зона без блокировки прохода.</p>
+      </div>
+    </article>
+  </section>
+</main>
+</body>
+</html>

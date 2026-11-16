@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Перспективные скетчи комнат</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #d8d8d6;
+      color: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 22px;
+      color: #4d4d4d;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    figure {
+      margin: 0;
+      background: #fbfaf6;
+      border: 1px solid #cfcfca;
+      padding: 12px;
+    }
+
+    figcaption {
+      padding: 8px 2px 0;
+      color: #333;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(0,0,0,.025), transparent 18%),
+        radial-gradient(circle at 80% 30%, rgba(0,0,0,.02), transparent 20%),
+        linear-gradient(90deg, rgba(0,0,0,.018) 1px, transparent 1px),
+        #fffefb;
+      background-size: auto, auto, 42px 42px, auto;
+    }
+
+    .main { fill: none; stroke: #111; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .thin { fill: none; stroke: #171717; stroke-width: 1.45; stroke-linecap: round; stroke-linejoin: round; }
+    .light { fill: none; stroke: #666; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; }
+    .hatch { stroke: #777; stroke-width: .9; stroke-linecap: round; }
+    .ghost { fill: none; stroke: #9a9a9a; stroke-width: .8; stroke-linecap: round; stroke-linejoin: round; }
+
+    @media (max-width: 900px) {
+      main { padding: 14px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Перспективные интерьерные скетчи по планировке</h1>
+  <p>Формат: черно-белый линейный интерьерный эскиз в перспективе, с учетом окон, дверей, лоджии и логики расстановки мебели.</p>
+
+  <section class="grid">
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Гостиная, перспективный скетч">
+        <path class="main" d="M86 574 L352 252 H672 L845 570"/>
+        <path class="main" d="M352 252 V88 M672 252 V88 M352 88 H672"/>
+        <path class="thin" d="M86 574 V115 L352 252 M845 570 V145 L672 252"/>
+        <path class="main" d="M444 166 H612 V334 H444 Z"/>
+        <path class="thin" d="M462 184 H514 V316 H462 Z M528 184 H594 V316 H528 Z"/>
+        <path class="thin" d="M430 336 H628 M432 352 H626"/>
+        <path class="main" d="M118 430 L292 384 L407 414 L240 472 Z"/>
+        <path class="main" d="M118 430 V514 L240 560 V472 M292 384 V470 L407 510 V414"/>
+        <path class="thin" d="M150 419 L185 408 L286 438 L248 450 Z M236 395 L282 386 L374 412"/>
+        <path class="thin" d="M126 507 L245 546 M165 497 L288 533 M209 487 L331 520"/>
+        <path class="main" d="M640 358 L805 326 V395 L646 430 Z"/>
+        <path class="main" d="M655 430 L812 395 V434 L655 470 Z"/>
+        <path class="thin" d="M670 370 L782 349 M690 422 V456 M741 411 V445"/>
+        <path class="main" d="M690 214 L789 180 V274 L690 304 Z"/>
+        <path class="thin" d="M704 228 L774 204 V260 L704 282 Z"/>
+        <path class="thin" d="M725 156 H794 V505 M737 181 H792 M737 213 H792 M737 246 H792 M737 279 H792 M737 312 H792"/>
+        <path class="ghost" d="M352 574 V252 M438 574 L479 252 M526 574 L526 252 M612 574 L573 252 M700 574 L626 252"/>
+        <path class="ghost" d="M160 512 C255 500 360 508 451 494 M458 496 C554 480 660 486 780 466"/>
+      </svg>
+      <figcaption>Гостиная 19.48 м2</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Спальня, перспективный скетч">
+        <path class="main" d="M80 582 L330 246 H650 L844 582"/>
+        <path class="main" d="M330 246 V84 M650 246 V84 M330 84 H650"/>
+        <path class="thin" d="M80 582 V120 L330 246 M844 582 V126 L650 246"/>
+        <path class="main" d="M438 150 H602 V326 H438 Z"/>
+        <path class="thin" d="M456 170 H505 V308 H456 Z M520 170 H584 V308 H520 Z"/>
+        <path class="thin" d="M422 332 H618 M422 346 H618"/>
+        <path class="main" d="M470 365 L760 420 V548 H455 L306 478 Z"/>
+        <path class="main" d="M306 478 L470 365 L760 420"/>
+        <path class="thin" d="M360 468 L500 390 L690 424 M410 500 C500 482 600 495 720 470"/>
+        <path class="thin" d="M455 548 V460 M760 548 V420 M306 478 V526"/>
+        <path class="main" d="M118 104 H246 V566 H118 Z"/>
+        <path class="thin" d="M137 126 H226 V242 H137 Z M137 262 H226 V386 H137 Z M137 406 H226 V540 H137 Z"/>
+        <path class="main" d="M733 402 L820 424 V526 L733 506 Z"/>
+        <path class="thin" d="M748 416 L802 430 V490 L748 478 Z"/>
+        <path class="main" d="M701 407 V353 L742 344 V416"/>
+        <path class="thin" d="M712 354 C727 342 744 351 751 371 M712 370 H750"/>
+        <path class="main" d="M628 350 L674 340 L674 406 L628 414 Z"/>
+        <path class="thin" d="M635 362 H665"/>
+        <path class="ghost" d="M330 582 V246 M410 582 L454 246 M490 582 V246 M574 582 L541 246 M660 582 L610 246"/>
+      </svg>
+      <figcaption>Спальня 18.23 м2</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Кухня, перспективный скетч">
+        <path class="main" d="M88 580 L326 238 H654 L836 580"/>
+        <path class="main" d="M326 238 V92 M654 238 V92 M326 92 H654"/>
+        <path class="thin" d="M88 580 V126 L326 238 M836 580 V118 L654 238"/>
+        <path class="main" d="M111 134 H176 V548 H111"/>
+        <path class="main" d="M524 194 H678 V288 H524 Z"/>
+        <path class="thin" d="M568 194 V288 M612 194 V288 M642 204 H666"/>
+        <path class="main" d="M518 342 H674 L786 300 V386 L674 430 H518 Z"/>
+        <path class="thin" d="M518 342 V430 M570 342 V430 M622 342 V430 M674 342 V430"/>
+        <path class="thin" d="M552 358 H590 M606 358 H642 M692 336 H756"/>
+        <path class="main" d="M690 288 L805 248 V538 L690 570 Z"/>
+        <path class="thin" d="M707 320 L788 298 M708 372 L788 350 M708 430 L788 406"/>
+        <path class="thin" d="M716 334 H772 V408 H716 Z M725 350 H762 V392 H725 Z"/>
+        <ellipse class="thin" cx="746" cy="282" rx="20" ry="7" transform="rotate(-13 746 282)"/>
+        <ellipse class="thin" cx="785" cy="272" rx="17" ry="6" transform="rotate(-13 785 272)"/>
+        <path class="main" d="M245 402 L425 378 L533 430 L350 466 Z"/>
+        <path class="thin" d="M274 466 V548 M498 426 V530 M350 466 V562 M425 378 V486"/>
+        <path class="thin" d="M225 424 L190 450 L190 540 M236 420 L206 448 L206 532 M480 420 L520 440 L520 520 M492 414 L536 435 L536 512"/>
+        <path class="main" d="M360 232 H456 V352 H360 Z"/>
+        <path class="thin" d="M376 248 H440 V336 H376 Z"/>
+        <path class="ghost" d="M326 580 V238 M410 580 L454 238 M494 580 V238 M574 580 L542 238 M658 580 L610 238"/>
+      </svg>
+      <figcaption>Кухня 9.02 м2</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Ванная, перспективный скетч">
+        <path class="main" d="M112 578 L342 232 H660 L806 578"/>
+        <path class="main" d="M342 232 V88 M660 232 V88 M342 88 H660"/>
+        <path class="thin" d="M112 578 V150 L342 232 M806 578 V136 L660 232"/>
+        <path class="main" d="M548 278 L768 232 V486 L548 548 Z"/>
+        <path class="thin" d="M572 300 L746 264 V438 L572 488 Z"/>
+        <path class="thin" d="M548 278 V548 M622 262 V522 M696 246 V500"/>
+        <path class="main" d="M220 342 H438 V428 H220 Z"/>
+        <path class="thin" d="M248 362 H318 V412 H248 Z M334 365 C362 344 400 349 416 371"/>
+        <path class="main" d="M242 428 L408 428 L386 548 H266 Z"/>
+        <path class="thin" d="M274 454 H382 M282 486 H374"/>
+        <path class="main" d="M452 382 C512 378 536 410 530 454 C524 502 460 510 442 466 C426 426 420 392 452 382 Z"/>
+        <path class="thin" d="M452 410 C492 402 512 420 505 452 C498 484 462 488 452 462"/>
+        <path class="main" d="M360 126 H510 V258 H360 Z"/>
+        <path class="thin" d="M380 146 H490 V238 H380 Z M392 164 H478 V224 H392 Z"/>
+        <path class="ghost" d="M342 578 V232 M430 578 L460 232 M518 578 V232 M606 578 L560 232 M694 578 L628 232"/>
+        <path class="ghost" d="M175 500 C250 486 338 494 428 476 M512 460 C602 442 704 430 774 404"/>
+      </svg>
+      <figcaption>Ванная 4.11 м2</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Прихожая и коридор, перспективный скетч">
+        <path class="main" d="M96 580 L330 244 H646 L832 580"/>
+        <path class="main" d="M330 244 V86 M646 244 V86 M330 86 H646"/>
+        <path class="thin" d="M96 580 V118 L330 244 M832 580 V116 L646 244"/>
+        <path class="main" d="M400 154 H510 V430 H400 Z"/>
+        <path class="thin" d="M420 176 H490 V404 H420 Z M454 286 h22"/>
+        <path class="main" d="M118 122 H244 V572 H118 Z"/>
+        <path class="thin" d="M138 146 H224 V280 H138 Z M138 304 H224 V546 H138 Z M181 146 V546"/>
+        <path class="main" d="M592 194 H716 V392 H592 Z"/>
+        <path class="thin" d="M612 214 H696 V372 H612 Z M624 226 L686 360 M686 226 L624 360"/>
+        <path class="main" d="M560 430 L742 386 V438 L560 500 Z"/>
+        <path class="thin" d="M585 430 V488 M648 414 V468 M710 398 V448"/>
+        <path class="main" d="M298 418 L420 390 L468 420 L344 454 Z"/>
+        <path class="thin" d="M310 454 V506 M442 417 V480 M344 454 V520"/>
+        <path class="ghost" d="M330 580 V244 M414 580 L454 244 M498 580 V244 M582 580 L542 244 M666 580 L608 244"/>
+        <path class="ghost" d="M170 510 C260 492 352 500 444 478 M520 462 C612 442 710 430 786 404"/>
+      </svg>
+      <figcaption>Прихожая и коридор 7.40 м2</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 900 640" role="img" aria-label="Лоджия, перспективный скетч">
+        <path class="main" d="M78 580 L320 238 H680 L842 580"/>
+        <path class="main" d="M320 238 V100 M680 238 V100 M320 100 H680"/>
+        <path class="thin" d="M78 580 V160 L320 238 M842 580 V158 L680 238"/>
+        <path class="main" d="M372 144 H628 V362 H372 Z"/>
+        <path class="thin" d="M396 166 H474 V342 H396 Z M494 166 H604 V342 H494 Z M372 286 H628"/>
+        <path class="main" d="M104 252 H218 V548 H104 Z"/>
+        <path class="thin" d="M124 276 H198 V350 H124 Z M124 372 H198 V528 H124 Z"/>
+        <path class="main" d="M704 278 L806 246 V548 L704 576 Z"/>
+        <path class="thin" d="M724 304 L788 284 M724 366 L788 346 M724 432 L788 410"/>
+        <path class="main" d="M392 410 L510 386 L594 418 L476 452 Z"/>
+        <path class="thin" d="M418 452 V522 M570 418 V490 M476 452 V536"/>
+        <path class="thin" d="M288 410 C330 368 376 380 388 430 C346 452 316 448 288 410 Z"/>
+        <path class="thin" d="M602 422 C624 378 676 376 698 430 C660 454 630 452 602 422 Z"/>
+        <path class="ghost" d="M320 580 V238 M408 580 L456 238 M496 580 V238 M584 580 L544 238 M672 580 L616 238"/>
+        <path class="ghost" d="M150 512 C250 492 360 502 464 480 M502 480 C600 458 706 444 790 410"/>
+      </svg>
+      <figcaption>Лоджия 3.04 / 1.52 м2</figcaption>
+    </figure>
+  </section>
+</main>
+</body>
+</html>

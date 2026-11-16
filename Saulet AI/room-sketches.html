@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Эскизы по планировке 56.76 м2</title>
+  <style>
+    :root {
+      --ink: #27231f;
+      --muted: #7d746c;
+      --line: #cfc5b9;
+      --wall: #4e4842;
+      --paper: #f7f2ea;
+      --oak: #d9bf95;
+      --sage: #a8b5a2;
+      --clay: #c98b74;
+      --blue: #9fb8c9;
+      --tile: #e6e0d8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ede6dc;
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .sheet {
+      background: var(--paper);
+      border: 1px solid #d9d0c5;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(56, 48, 39, .08);
+    }
+
+    .sheet h2 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .note {
+      min-height: 40px;
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background:
+        linear-gradient(90deg, rgba(39,35,31,.035) 1px, transparent 1px),
+        linear-gradient(rgba(39,35,31,.035) 1px, transparent 1px);
+      background-size: 20px 20px;
+      border-radius: 6px;
+    }
+
+    .wall {
+      fill: none;
+      stroke: var(--wall);
+      stroke-width: 10;
+      stroke-linecap: square;
+      stroke-linejoin: round;
+    }
+
+    .thin {
+      fill: none;
+      stroke: var(--ink);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .fine {
+      fill: none;
+      stroke: var(--muted);
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .window {
+      stroke: var(--blue);
+      stroke-width: 6;
+      stroke-linecap: round;
+    }
+
+    .door {
+      fill: none;
+      stroke: var(--muted);
+      stroke-width: 2;
+      stroke-dasharray: 4 4;
+    }
+
+    .wood { fill: var(--oak); stroke: var(--ink); stroke-width: 2; }
+    .soft { fill: #dfd2c2; stroke: var(--ink); stroke-width: 2; }
+    .sage { fill: var(--sage); stroke: var(--ink); stroke-width: 2; }
+    .clay { fill: var(--clay); stroke: var(--ink); stroke-width: 2; }
+    .tile { fill: var(--tile); stroke: var(--ink); stroke-width: 2; }
+    .glass { fill: rgba(159,184,201,.35); stroke: var(--ink); stroke-width: 2; }
+    .label {
+      fill: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .small {
+      fill: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 860px) {
+      main { padding: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Эскизы по планировке 2К, 56.76 м2</h1>
+  <p class="lead">Рабочая концепция расстановки мебели с учетом формы комнат, входов, окон, лоджии и мокрых зон.</p>
+
+  <section class="grid">
+    <article class="sheet">
+      <h2>Гостиная 19.48 м2</h2>
+      <p class="note">Диванная зона у длинной стены, ТВ и хранение на внутренней стене, у окна легкое рабочее/читальное место.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз гостиной">
+        <path class="wall" d="M50 55 H455 V305 H50 Z"/>
+        <line class="window" x1="105" y1="305" x2="320" y2="305"/>
+        <path class="door" d="M455 140 A65 65 0 0 0 390 205"/>
+        <rect class="soft" x="78" y="116" width="70" height="155" rx="8"/>
+        <rect class="soft" x="150" y="225" width="108" height="45" rx="8"/>
+        <rect class="wood" x="285" y="78" width="128" height="26" rx="4"/>
+        <rect class="wood" x="286" y="110" width="126" height="16" rx="3"/>
+        <rect class="sage" x="202" y="137" width="84" height="54" rx="8"/>
+        <rect class="wood" x="338" y="245" width="70" height="38" rx="4"/>
+        <circle class="clay" cx="382" cy="222" r="18"/>
+        <path class="fine" d="M78 82 C128 95 157 82 196 93 M118 292 C155 281 199 293 232 282 M300 214 C335 195 376 204 408 190"/>
+        <text class="label" x="74" y="94">диван</text>
+        <text class="label" x="289" y="68">ТВ / хранение</text>
+        <text class="label" x="334" y="236">рабочий стол</text>
+      </svg>
+    </article>
+
+    <article class="sheet">
+      <h2>Спальня 18.23 м2</h2>
+      <p class="note">Кровать по центру с проходами, широкий шкаф у верхней стены, туалетный/рабочий стол ближе к окну.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз спальни">
+        <path class="wall" d="M70 55 H448 V305 H70 Z"/>
+        <line class="window" x1="155" y1="305" x2="345" y2="305"/>
+        <path class="door" d="M448 150 A70 70 0 0 0 378 220"/>
+        <rect class="wood" x="98" y="72" width="235" height="42" rx="3"/>
+        <line class="fine" x1="150" y1="73" x2="150" y2="113"/>
+        <line class="fine" x1="202" y1="73" x2="202" y2="113"/>
+        <line class="fine" x1="254" y1="73" x2="254" y2="113"/>
+        <rect class="soft" x="154" y="145" width="155" height="116" rx="8"/>
+        <rect class="sage" x="169" y="126" width="48" height="28" rx="4"/>
+        <rect class="sage" x="246" y="126" width="48" height="28" rx="4"/>
+        <rect class="wood" x="344" y="235" width="70" height="34" rx="4"/>
+        <circle class="clay" cx="325" cy="250" r="14"/>
+        <path class="fine" d="M108 132 C148 125 180 132 218 122 M338 93 C374 84 404 90 432 78 M116 284 C163 275 222 290 271 278"/>
+        <text class="label" x="102" y="66">шкаф</text>
+        <text class="label" x="178" y="214">кровать</text>
+        <text class="label" x="336" y="226">стол</text>
+      </svg>
+    </article>
+
+    <article class="sheet">
+      <h2>Кухня 9.02 м2</h2>
+      <p class="note">Гарнитур вдоль правой и нижней части, стол на 4 персоны по центру, выход на лоджию остается свободным.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз кухни">
+        <path class="wall" d="M92 62 H428 V285 H92 Z"/>
+        <line class="window" x1="248" y1="285" x2="382" y2="285"/>
+        <path class="door" d="M92 205 A64 64 0 0 1 156 269"/>
+        <rect class="tile" x="366" y="92" width="44" height="160" rx="4"/>
+        <rect class="tile" x="232" y="238" width="134" height="35" rx="4"/>
+        <circle class="fine" cx="388" cy="117" r="10"/>
+        <circle class="fine" cx="388" cy="149" r="10"/>
+        <rect class="fine" x="375" y="184" width="27" height="38" rx="3"/>
+        <rect class="wood" x="207" y="139" width="88" height="58" rx="6"/>
+        <rect class="sage" x="166" y="148" width="32" height="38" rx="5"/>
+        <rect class="sage" x="304" y="148" width="32" height="38" rx="5"/>
+        <rect class="sage" x="225" y="103" width="48" height="28" rx="5"/>
+        <rect class="sage" x="225" y="205" width="48" height="28" rx="5"/>
+        <path class="fine" d="M123 94 C176 81 223 98 271 85 M136 281 C187 272 245 286 304 276"/>
+        <text class="label" x="362" y="82">гарнитур</text>
+        <text class="label" x="217" y="171">стол</text>
+        <text class="small" x="250" y="306">лоджия</text>
+      </svg>
+    </article>
+
+    <article class="sheet">
+      <h2>Ванная 4.11 м2</h2>
+      <p class="note">Ванна справа, раковина напротив входа, унитаз в существующей зоне, стиральная машина под столешницей.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз ванной">
+        <path class="wall" d="M130 55 H390 V305 H130 Z"/>
+        <path class="door" d="M130 215 A65 65 0 0 1 195 280"/>
+        <rect class="glass" x="286" y="80" width="78" height="178" rx="8"/>
+        <rect class="tile" x="155" y="86" width="98" height="46" rx="5"/>
+        <circle class="fine" cx="204" cy="109" r="16"/>
+        <rect class="tile" x="155" y="156" width="66" height="66" rx="7"/>
+        <circle class="fine" cx="188" cy="189" r="22"/>
+        <path class="fine" d="M180 248 C215 238 252 248 286 237 M152 66 C213 76 271 58 332 70 M305 272 C324 263 344 268 362 260"/>
+        <text class="label" x="292" y="72">ванна</text>
+        <text class="label" x="156" y="78">раковина</text>
+        <text class="label" x="153" y="148">стирка</text>
+      </svg>
+    </article>
+
+    <article class="sheet">
+      <h2>Прихожая + коридор 7.40 м2</h2>
+      <p class="note">Шкаф у левой стены прихожей, банкетка и зеркало напротив, в коридоре неглубокое хранение без сужения прохода.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз прихожей и коридора">
+        <path class="wall" d="M72 95 H250 V250 H385 V305 H72 Z"/>
+        <path class="door" d="M178 95 A72 72 0 0 0 106 167"/>
+        <path class="door" d="M385 250 A58 58 0 0 0 327 192"/>
+        <rect class="wood" x="92" y="124" width="44" height="148" rx="4"/>
+        <rect class="sage" x="154" y="203" width="72" height="32" rx="6"/>
+        <rect class="glass" x="171" y="126" width="42" height="66" rx="4"/>
+        <rect class="wood" x="255" y="263" width="100" height="23" rx="4"/>
+        <path class="fine" d="M238 121 C281 112 326 124 368 111 M85 292 C140 282 204 298 262 286"/>
+        <text class="label" x="88" y="116">шкаф</text>
+        <text class="label" x="150" y="196">банкетка</text>
+        <text class="label" x="253" y="254">консоль</text>
+      </svg>
+    </article>
+
+    <article class="sheet">
+      <h2>Лоджия 3.04 / 1.52 м2</h2>
+      <p class="note">Узкая зона: хранение по торцам, складной столик или мини-зимний сад, проход от кухни остается свободным.</p>
+      <svg viewBox="0 0 520 360" role="img" aria-label="Эскиз лоджии">
+        <path class="wall" d="M85 128 H435 V240 H85 Z"/>
+        <line class="window" x1="110" y1="240" x2="410" y2="240"/>
+        <path class="door" d="M246 128 A58 58 0 0 1 304 186"/>
+        <rect class="wood" x="98" y="145" width="44" height="78" rx="4"/>
+        <rect class="wood" x="378" y="145" width="42" height="78" rx="4"/>
+        <rect class="sage" x="225" y="181" width="72" height="29" rx="5"/>
+        <circle class="clay" cx="180" cy="185" r="19"/>
+        <circle class="clay" cx="335" cy="187" r="17"/>
+        <path class="fine" d="M170 165 C177 149 193 150 200 166 M325 165 C336 145 352 148 359 166 M151 255 C210 248 275 261 335 251"/>
+        <text class="label" x="94" y="136">хранение</text>
+        <text class="label" x="218" y="174">столик</text>
+        <text class="label" x="358" y="136">хранение</text>
+      </svg>
+    </article>
+  </section>
+</main>
+</body>
+</html>
